@@ -10,7 +10,7 @@ glob('../**/index.html', (err, files) => {
 
 const app: Express = express();
 const port = process.env.PORT || 4002;
-const root: string = path.join(process.cwd(), '..');
+const root: string = path.join(process.cwd(), '../');
 console.log(root)
 console.log('************')
 
@@ -19,8 +19,9 @@ app.use(express.static(path.join(root, '/client/build')));
 console.log(root)
 app.get('*', function (req, res) {
     // console.log(path.join(root, 'deploy/client/index.html'))
-    console.log(req.path)
-    res.sendFile(path.join(root, '/client/build/index.html'));
+    console.log("root", root)
+    console.log(req.originalUrl)
+    res.sendFile(path.join(root, 'client/build/index.html'));
 });
 
 
