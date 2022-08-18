@@ -1,0 +1,14 @@
+{
+  "name": "full-stack-starter-project",
+  "version": "1.0.0",
+  "description": "Full-Stack starter project",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd ./server && npm run start",
+    "build": "rm -rf ./deploy/server ./deploy/client && cd ./server && npm run my-build && cd ../client && npm run build",
+    "deploy": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
