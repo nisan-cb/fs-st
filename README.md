@@ -1,7 +1,6 @@
 # Full-Stack starter project
 
-This project used for full stack file structure 
-and include client and server setup in TypeScript,
+This project is a template client and server application in typescript,
 and scripts to build and deploy your project to Heroku cloud.
 
 At first run  `npm ci` to install all dependencies.
